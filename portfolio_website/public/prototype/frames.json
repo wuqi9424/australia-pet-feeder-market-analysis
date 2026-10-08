@@ -1,0 +1,345 @@
+[
+  {
+    "frame_id": "WF01",
+    "screen_name": "Home / Device Status",
+    "source_screen_id": "A01",
+    "flow_id": "F11",
+    "scenario_id": "S08; S04",
+    "requirement_id": "FR-010; SR-001; NFR-009",
+    "status_id": "ST01; ST07; ST10",
+    "priority": "P1",
+    "sections": [
+      [
+        "Connection",
+        "Remote connection available in this demo fixture. Last synced: Demo day 2, 07:30."
+      ],
+      [
+        "Next planned meal",
+        "Demo day 2, 18:00 | Configured portion A. Last device-acknowledged plan: demo-v1. These are synthetic settings, not engineering specifications."
+      ],
+      [
+        "Recent evidence",
+        "Demo day 1, 18:00: Dispense attempted. Delivery unconfirmed."
+      ],
+      [
+        "Attention",
+        "Check food/device if needed. No known execution failure is established by unconfirmed output alone."
+      ]
+    ],
+    "buttons": [
+      [
+        "Schedule",
+        "WF02"
+      ],
+      [
+        "View recent event",
+        "WF04"
+      ],
+      [
+        "Local controls concept",
+        "WF09"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF02",
+    "screen_name": "Schedule",
+    "source_screen_id": "A02",
+    "flow_id": "F10",
+    "scenario_id": "S03; S04",
+    "requirement_id": "FR-009; ERR-011",
+    "status_id": "ST01; ST11",
+    "priority": "P1",
+    "sections": [
+      [
+        "Last acknowledged plan",
+        "demo-v1: Demo day 2, 18:00 | Portion A. Last synced: Demo day 2, 07:30."
+      ],
+      [
+        "Edit boundary",
+        "App changes are drafts until the device acknowledges a committed version. Local committed configuration remains execution authority."
+      ]
+    ],
+    "buttons": [
+      [
+        "Edit meal",
+        "WF03"
+      ],
+      [
+        "Back to Home",
+        "WF01"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF03",
+    "screen_name": "Create / Edit Meal",
+    "source_screen_id": "A02; A05",
+    "flow_id": "F10; E11; E12",
+    "scenario_id": "S03; S04",
+    "requirement_id": "FR-009; ERR-011",
+    "status_id": "ST11; ST12",
+    "priority": "P1",
+    "sections": [
+      [
+        "Draft",
+        "Fixture edit: 19:00 | Portion A. Based on device version demo-v1."
+      ],
+      [
+        "Review before sending",
+        "Changing an App draft does not change the active local plan. This synthetic example assumes a valid edit away from an unresolved near-meal cutoff."
+      ],
+      [
+        "Commit boundary",
+        "Review → Send change → Waiting for device confirmation → Device confirmed OR Could not confirm. No food-delivery claim."
+      ]
+    ],
+    "buttons": [
+      [
+        "Review draft",
+        "review"
+      ],
+      [
+        "Discard draft / Back",
+        "WF02"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF04",
+    "screen_name": "Feed Event Detail",
+    "source_screen_id": "A03",
+    "flow_id": "F11; F12",
+    "scenario_id": "S08; S07",
+    "requirement_id": "FR-010; FR-011; SR-001",
+    "status_id": "ST05; ST07",
+    "priority": "P1",
+    "sections": [
+      [
+        "Event",
+        "Demo day 1, 18:00: A dispense attempt was recorded."
+      ],
+      [
+        "Evidence boundary",
+        "A command or motor action is not proof that food was delivered. This bounded recent event view is not an expanded history/analytics feature."
+      ],
+      [
+        "Freshness",
+        "Last synced: Demo day 2, 07:30. Event time and sync time describe different things."
+      ]
+    ],
+    "buttons": [
+      [
+        "Understand unconfirmed output",
+        "WF05"
+      ],
+      [
+        "Back to Home",
+        "WF01"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF05",
+    "screen_name": "Delivery Unconfirmed",
+    "source_screen_id": "A03",
+    "flow_id": "E10; F05",
+    "scenario_id": "S07; S08",
+    "requirement_id": "SR-001; ERR-007",
+    "status_id": "ST05; ST07",
+    "priority": "P0 truthfulness / P1 App representation",
+    "sections": [
+      [
+        "Delivery unconfirmed",
+        "No verified actual food output for this event."
+      ],
+      [
+        "What we know",
+        "A dispense attempt occurred at Demo day 1, 18:00."
+      ],
+      [
+        "What we do not know",
+        "Actual food delivery was not confirmed. Pet consumption is not known."
+      ],
+      [
+        "Suggested action",
+        "Check the feeder / food if needed, using safe local procedures. Unknown is neither confirmed success nor proven failure. No automatic retry."
+      ]
+    ],
+    "buttons": [
+      [
+        "Local check concept",
+        "WF09"
+      ],
+      [
+        "Back to event",
+        "WF04"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF06",
+    "screen_name": "Device Offline",
+    "source_screen_id": "A01",
+    "flow_id": "E01; E02; F11",
+    "scenario_id": "S04; S08",
+    "requirement_id": "ERR-001; FR-010; NFR-009",
+    "status_id": "ST10; ST01; ST07",
+    "priority": "P0 boundary / P1 App representation",
+    "sections": [
+      [
+        "Device offline",
+        "Remote information unavailable. Last synced: Demo day 2, 07:30. This is cached information, not live status."
+      ],
+      [
+        "Last known next meal",
+        "Demo day 2, 18:00 | Portion A, demo-v1. Current device configuration may differ."
+      ],
+      [
+        "Local feeding boundary",
+        "Scheduled meals continue locally only if device power, time and configuration remain valid. The App cannot verify these conditions while offline."
+      ],
+      [
+        "Remote controls unavailable",
+        "Viewing cached information is possible; a fresh remote edit cannot be confirmed. Offline is not a feeding-failure diagnosis."
+      ]
+    ],
+    "buttons": [
+      [
+        "Remote send unavailable",
+        "disabled"
+      ],
+      [
+        "Check local concept",
+        "WF09"
+      ],
+      [
+        "Back to cached Home",
+        "offline-home"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF07",
+    "screen_name": "Error / Attention",
+    "source_screen_id": "A03",
+    "flow_id": "E08; E09; E13",
+    "scenario_id": "S07; S08",
+    "requirement_id": "ERR-007; FR-011; ERR-010; SR-001",
+    "status_id": "ST08; ST09; ST13",
+    "priority": "P0 boundary / P1 App representation",
+    "sections": [
+      [
+        "Possible feeding issue",
+        "In this separate synthetic fixture the feeder recorded an execution problem at Demo day 1, 18:00. Cause and actual output are not established."
+      ],
+      [
+        "Suggested action",
+        "Check the feeder safely. No unsupported “jam detected” diagnosis or retry action."
+      ],
+      [
+        "Other evidence variants",
+        "Not executed: only if valid time/occurrence evidence establishes no execution. Delayed notification: show original event time and stale/historical label, not current proof."
+      ]
+    ],
+    "buttons": [
+      [
+        "View event details",
+        "WF04"
+      ],
+      [
+        "Maintenance guidance",
+        "WF08"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF08",
+    "screen_name": "Maintenance",
+    "source_screen_id": "A03; L07",
+    "flow_id": "F07; F08; E16",
+    "scenario_id": "S09",
+    "requirement_id": "UXR-002; SR-002; ERR-012",
+    "status_id": "ST07; ST09",
+    "priority": "P0 local task / P1 contextual help",
+    "sections": [
+      [
+        "On the local device",
+        "Enter maintenance → Feeding paused → Refill / clean → Reassemble → Readiness check → Explicit resume."
+      ],
+      [
+        "Protection",
+        "No unexpected dispensing during the declared safe procedure. This App page is guidance, not a remote pause/resume controller."
+      ],
+      [
+        "Meal due during maintenance",
+        "Show Not executed only if evidence supports it; otherwise Unconfirmed. Late-meal/catch-up policy remains unresolved. Do not automatically dispense extra food."
+      ]
+    ],
+    "buttons": [
+      [
+        "View local maintenance concept",
+        "local-maintenance"
+      ],
+      [
+        "Back to Home",
+        "WF01"
+      ]
+    ],
+    "surface": "Optional App"
+  },
+  {
+    "frame_id": "WF09",
+    "screen_name": "Simplified Local Interface Concept",
+    "source_screen_id": "L01; L02; L03; L04; L05; L06; L07",
+    "flow_id": "F01; F02; F03; F05; F06; F07; F08",
+    "scenario_id": "S01; S02; S03; S08; S09; S10",
+    "requirement_id": "FR-004; FR-001; FR-005; FR-006; FR-007; UXR-002; SR-001; SR-002; ERR-012",
+    "status_id": "ST01; ST05; ST07",
+    "priority": "P0",
+    "sections": [
+      [
+        "App is optional",
+        "Local schedule, local edit, manual-feed review, status check and maintenance remain accessible under declared powered/valid conditions."
+      ],
+      [
+        "Local configuration",
+        "Set/check time → Draft meal → Review → Save locally → Inspect active plan. No registration/pairing prerequisite."
+      ],
+      [
+        "Manual feed boundary",
+        "Review intended portion and upcoming scheduled meal. Policy unresolved / design decision required near a scheduled meal. No automatic skip, double feed or retry."
+      ],
+      [
+        "Hardware concept",
+        "Abstract interaction roles only, not final industrial design. No screen size, display technology, specific buttons or sensor capability selected."
+      ]
+    ],
+    "buttons": [
+      [
+        "Local configuration demo",
+        "local-config"
+      ],
+      [
+        "Local event evidence",
+        "local-event"
+      ],
+      [
+        "Local maintenance demo",
+        "local-maintenance"
+      ],
+      [
+        "Manual policy check",
+        "local-manual"
+      ]
+    ],
+    "surface": "Local concept"
+  }
+]

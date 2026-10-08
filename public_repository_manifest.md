@@ -26,3 +26,7 @@ Real Tableau PNGs and a packaged workbook after native acceptance and bundled-da
 The public modules reproduce descriptive summaries/checks using the bundled tables. They do not recreate source verification,private review acquisition,AI semantic coding,human decisions or a new product recommendation. See the module README and data policy for the scope.
 
 Before upload,review the staged diff,source terms and current secret scan;the .gitignore is a guard,not proof that future added files are safe.
+
+## Interactive product portfolio source
+
+PUBLIC: portfolio_website/index.html, package.json, package-lock.json, src/, public/ and README.md. Approved SVG/prototype and public case content only. Build dependencies and dist are excluded from Git; internal release audits remain outside this package.

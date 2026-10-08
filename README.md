@@ -4,6 +4,8 @@
 
 [中文案例](reports/portfolio_case_study_cn.md)
 
+**Interactive Product Portfolio — deployment pending.** [Website source and local instructions](portfolio_website/README.md). The product concept is unlaunched; no hardware or usability validation is claimed.
+
 ## Project Overview
 
 **Business question:** If a new pet-care brand enters the Australian automatic pet feeder market, what product should it offer, at what price position, with which features and channels?

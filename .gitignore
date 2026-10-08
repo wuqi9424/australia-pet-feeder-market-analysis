@@ -38,3 +38,12 @@ Cache/
 
 # Local command captures; not the curated executive reports
 reports/generated/
+
+# Website source-build release exclusions
+node_modules/
+dist/
+.env
+.env.*
+*.log
+.DS_Store
+private_interview/
