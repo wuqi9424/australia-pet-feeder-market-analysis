@@ -2,6 +2,8 @@
 
 ## Completed package preparation
 
+- [x] Personal interview-preparation materials excluded.
+
 - [x] Public data allowlist used; only six sanitised derived CSVs included.
 - [x] Full raw/processed review text and acquisition artifacts excluded.
 - [x] No account/session evidence, cookies or internal hash manifests copied.

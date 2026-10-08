@@ -8,12 +8,14 @@ This independent folder is the upload boundary. Do not stage the parent research
 - Methodology,limitations,public data dictionary and business workflow.
 - Six sanitised CSVs: macro context, canonical supply, consumer aspect aggregate, opportunity candidates, proposed requirements and compatible-request weekly demand.
 - Four portable summary modules,shared loader and six meaningful tests.
-- Executive summary,Chinese case study and interview speaking drafts.
+- Executive summary and Chinese case study.
 - Dashboard status documentation and empty image-directory marker;no fake images.
 
 CSV columns use an explicit allowlist. Local source references,raw-source manifests,product-page URLs,full review text and account/browser metadata are removed. Official macro attribution URLs and offer/Trends snapshot times are retained. Numerical values and nulls are unchanged.
 
 ## PRIVATE / INTERNAL — excluded
+
+- `project_interview_summary.md`: PRIVATE / INTERNAL; personal interview-preparation material, excluded from this public package.
 
 Raw or processed full review text, review titles/profiles/evidence spans,raw page dumps,browser artifacts,cookies/tokens/session payloads,human-review workbooks,text-bearing QA packets,local path/hash manifests,failed-candidate dumps and desktop-specific files. Acquisition and full semantic coding pipelines are not redistributed.
 

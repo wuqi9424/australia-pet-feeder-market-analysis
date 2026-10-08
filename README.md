@@ -2,7 +2,7 @@
 
 **Supply × Consumer × Demand — Market Entry Case Study**
 
-[中文案例](reports/portfolio_case_study_cn.md) · [面试讲解](interview/project_interview_summary.md)
+[中文案例](reports/portfolio_case_study_cn.md)
 
 ## Project Overview
 
@@ -196,7 +196,6 @@ tests/                 # grain, null, boundary and frozen-output checks
 dashboard/images/      # .gitkeep; real assets added after Tableau validation
 dashboard/README.md
 reports/               # executive summary and Chinese case study
-interview/             # 30-second, 1-minute and 3-minute speaking drafts
 ```
 
 [Repository metadata](github_repository_metadata.md) · [About copy](github_about_copy.md) · [Publish checklist](github_publish_checklist.md) · [Public/private manifest](public_repository_manifest.md)
