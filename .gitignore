@@ -1,0 +1,40 @@
+# Local/editor artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Secrets/session material
+.env
+.env.*
+credentials*
+cookies*
+session*
+*.log
+*.pem
+*.key
+
+# Non-public research artifacts, at any level
+raw/
+private/
+internal/
+browser_artifacts/
+screenshots_raw/
+*hash_manifest*
+*sha256_manifest*
+
+# Temporary Tableau files/caches; final PNG/TWB/TWBX deliberately allowed
+*.twbr
+*.tmp
+*.bak
+~$*
+TableauTemp/
+TableauCache/
+Cache/
+
+# Local command captures; not the curated executive reports
+reports/generated/
