@@ -14,7 +14,7 @@ The direction combines the reliability-first routine candidate and simple cat-or
 
 ## Product and commercial hypotheses
 
-Core requirements are reliable dispensing, local schedules, portion control, easy setup, cleanable food-contact parts and offline continuation. Backup power and optional app/Wi-Fi support the routine. Guided setup and truthful feed-status alerts require proof. Camera, audio, selective access, individual multi-pet allocation, wet-food refrigeration and mandatory cloud dependency are excluded from v1.
+Core requirements are reliable dispensing, local schedules, portion control, easy setup, cleanable food-contact parts and offline continuation. Optional app/Wi-Fi may support the routine; battery backup is a P1 supporting experiment outside the baseline MVP. Guided setup and truthful feed-status alerts require proof. Camera, audio, selective access, individual multi-pet allocation, wet-food refrigeration and mandatory cloud dependency are excluded from v1.
 
 The competitive position is Lower-to-Middle. AUD149–199 is an illustrative concept-testing range, not validated WTP or final launch pricing. Specialist pet retail is the primary channel to validate; a controlled Amazon Australia listing is secondary. Access, conversion and economics remain unknown.
 

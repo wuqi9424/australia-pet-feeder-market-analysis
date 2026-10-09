@@ -23,7 +23,8 @@
 - [ ] Review the complete staged file list/diff; initialise Git only inside this release folder, not the parent research workspace.
 - [ ] Run a fresh secret scan immediately before upload; the current content review is not a guarantee about future edits.
 - [ ] Review source/platform terms and attribution for the demonstration tables; MIT is not a data licence.
-- [ ] Choose repository name and account; separately authorise remote creation/upload. This phase did not perform either.
+- [x] Owner-created repository configured as origin: `https://github.com/wuqi9424/australia-pet-feeder-market-analysis.git` on `main`.
+- [ ] Obtain owner confirmation for the reviewed commit/push. This audit does not stage or publish files.
 - [ ] After Tableau is actually built, add valid PNGs and optionally a reviewed package, update placeholders and record real native status.
 
-No remote URL, push, public release or publication result exists yet.
+The configured remote exists. Current working-tree changes remain uncommitted and unpushed by this audit; prior repository history is preserved. The internal pre-push audit remains local; it is not part of the public release.

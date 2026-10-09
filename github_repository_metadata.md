@@ -6,6 +6,6 @@
 - **Subtitle:** Supply × Consumer × Demand — Market Entry Case Study
 - **Short description:** Market research, consumer insight and product opportunity analysis for Australia's automatic pet feeder category.
 - **Topics:** market-research, consumer-insights, data-analysis, competitive-analysis, pricing-analysis, product-strategy, google-trends, tableau, python
-- **Website field:** leave blank until a real portfolio or Tableau URL exists.
+- **Website field:** https://australia-pet-feeder.vercel.app — deployed concept presentation, not a validated or purchasable product.
 
-No machine-learning topic is proposed: this project uses AI-assisted semantic coding, not a trained ML sentiment model. Tableau is a planned visualization layer; the native build is pending. These are suggested metadata only; no remote repository was created.
+No machine-learning topic is proposed: this project uses AI-assisted semantic coding, not a trained ML sentiment model. Tableau is a planned visualization layer; the native build is pending. These are suggested metadata only. The owner-created repository is configured as origin; this audit does not change remote metadata or publish anything.
