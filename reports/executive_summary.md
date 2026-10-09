@@ -20,4 +20,4 @@ The competitive position is Lower-to-Middle. AUD149–199 is an illustrative con
 
 ## Next decision gate
 
-Concept preference, feeding/offline performance, setup usability, status accuracy, cost/price acceptance and channel feasibility must be tested before launch. `recommendation_status = recommended_for_validation`. The evidence is desk research with curated samples and source/geography limitations, not primary consumer validation. Tableau preparation is complete, while native workbook implementation and screenshots remain pending.
+Concept preference, feeding/offline performance, setup usability, status accuracy, cost/price acceptance and channel feasibility must be tested before launch. Recommendation status: recommended for further validation. The evidence is desk research with curated samples and source/geography limitations, not primary consumer validation. Presentation-ready dashboard tables and specifications were prepared, but no native Tableau workbook or dashboard was ultimately built; the visual layer is four static Python figures.

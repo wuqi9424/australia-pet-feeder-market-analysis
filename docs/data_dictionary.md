@@ -122,7 +122,7 @@ Interpretation: No text;corrected141 critical rows,not unique consumers. Aggrega
 
 Row: One candidate. Rows: 5.
 
-Denominator: OH1,OH2,OH3,OH4,OH1+OH2.
+Denominator: the four candidate directions, identified in the data as reliability-first connected routine (OH1), simple cat-oriented routine (OH2), multi-cat selective access (OH3) and timed wet-food freshness (OH4), plus the selected combination of the first two (OH1+OH2).
 
 Interpretation: Qualitative frozen comparison;no opportunity score. consumer_support is a JSON text object of aspect metrics,not a universal score.
 
@@ -138,12 +138,12 @@ Interpretation: Qualitative frozen comparison;no opportunity score. consumer_sup
 | `supply_support` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 | `demand_support` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 | `triangulation_status` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
-| `selected_primary` | Boolean/null | True only for OH1+OH2. |
-| `selected_secondary` | Boolean/null | True only for OH3,deferred discovery. |
+| `selected_primary` | Boolean/null | True only for the selected reliability-first, cat-oriented combination (OH1+OH2). |
+| `selected_secondary` | Boolean/null | True only for the deferred multi-cat selective-access niche (OH3), kept for later discovery. |
 | `key_strength` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 | `key_risk` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 | `main_limitation` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
-| `recommendation_status` | text | recommended_for_validation. |
+| `recommendation_status` | text | Recommended for further validation, stored as the value `recommended_for_validation`; not launch approval. |
 | `candidate_decision_status` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 
 
@@ -174,7 +174,7 @@ Interpretation: Repeated strategy fields use attributes,not summed numbers. Opti
 | `price_window_status` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 | `primary_channel_hypothesis` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 | `secondary_channel_hypothesis` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
-| `recommendation_status` | text | recommended_for_validation. |
+| `recommendation_status` | text | Recommended for further validation, stored as the value `recommended_for_validation`; not launch approval. |
 | `positioning_status` | text | Literal frozen identity/category/context/qualitative attribute;not new classification or market claim. |
 
 

@@ -14,6 +14,6 @@ Analysed 53 canonical products,70 retail listings,57 ordinary price observations
 
 ## Optional status line
 
-Research synthesis and public analytical summaries complete; Tableau dashboard build pending native validation.
+Final (v1.0, frozen October 2026): research, product concept, public summaries and figures complete.
 
 These are case-study descriptions, not resume achievement bullets, launch results or paid-demand claims.

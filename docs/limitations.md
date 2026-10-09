@@ -17,8 +17,8 @@
 | No sales/conversion data | Market scale and commercial proof | No feeder TAM, market share, sales lift, revenue or ROI estimate |
 | WTP and costs untested | Price recommendation | AUD149–199 is an illustrative testing range, not validated launch pricing |
 | Channel economics/access unknown | Route to market | Specialist/Amazon choices are validation hypotheses, not partner commitments |
-| Tableau native build pending | Dashboard assets | Placeholder images; no completed workbook or validated interaction claim |
+| Tableau: presentation layer prepared; native dashboard not built | Dashboard layer | Dashboard tables and specifications exist; visuals in this repository are four static Python figures, and no interactive dashboard is claimed |
 
 The review corpus includes 453 Australian retail-context reviews, 454 Amazon-platform reviews and one international retailer review. Local host context does not establish reviewer residence. Syndication is 221 confirmed true, zero confirmed false and 687 unknown/unflagged. Counts across aspects overlap; they cannot be added as unique reviewers. Upper price-band review coverage is especially limited and descriptive.
 
-Price bands refer to this frozen dataset's observed structure, not quality. The primary concept combines consumer/job relevance with proposed execution improvements; no universal competitor gap or paid demand has been demonstrated. `recommendation_status = recommended_for_validation` remains the interpretation boundary.
+Price bands refer to this frozen dataset's observed structure, not quality. The primary concept combines consumer/job relevance with proposed execution improvements; no universal competitor gap or paid demand has been demonstrated. The recommendation status, recommended for further validation, remains the interpretation boundary.

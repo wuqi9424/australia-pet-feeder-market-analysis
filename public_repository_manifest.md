@@ -3,9 +3,9 @@
 | Area | Boundary | Reason |
 | --- | --- | --- |
 | README, English case and product summaries | PUBLIC | Curated evidence-to-product narrative |
-| docs, src, tests, dashboard | PUBLIC | Methods, reproducible presentation QA and native-validation limits |
+| docs, src, tests, figures, dashboard | PUBLIC | Methods, reproducible summaries and figures, final visual-layer status |
 | Six existing sanitised data tables | PUBLIC | Aggregated/selected presentation data; no full review corpus |
-| portfolio_website | PUBLIC separate artifact | Existing bilingual concept presentation retained unchanged; no commercial launch |
+| portfolio_website | PUBLIC separate artifact | Single source of the live bilingual concept website (Vercel builds from `main`); no commercial launch |
 | Chinese research case | LOCAL ARCHIVE | Preserved before public working-tree removal |
 | Full internal PRD and phase archive | PRIVATE / INTERNAL | Complete development and design history, not public summary |
 | Raw reviews, acquisition/session/cookie artifacts | PRIVATE / INTERNAL | Privacy, source restrictions and unnecessary public detail |
